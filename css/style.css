@@ -158,3 +158,24 @@ body {
 }
 /*--------------End header__bottom---------- */
 
+
+/*------------------Start banner-section------------ */
+.banner-section_inner {
+  display: flex;
+  justify-content: space-between;
+}
+
+.banner-section__slider-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: transparent;
+  border: none;
+  margin: 0;
+  padding: 0;
+  z-index: 5;
+}
+
+.banner-section__slider-btnprev {
+  right: 20px;
+}
