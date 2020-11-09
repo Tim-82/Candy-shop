@@ -217,13 +217,14 @@ body {
 
 
 
-/* font-family: 'Barlow', sans-serif; */
-
 .sale-item {
   max-width: 265px;
   text-align: center;
   border: 1px solid #CDCDCD;
   border-radius: 3px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .sale-item__top {
@@ -247,6 +248,7 @@ body {
 }
 .price {
   font-family: Barlow, sans-serif;
+  position: relative;
 }
 
 .sale-item__price-new {
@@ -271,5 +273,53 @@ body {
 
 .sale-item__price-old {
   font-weight: 400;
+  font-size: 14px;
+  line-height:17px;
+  color: #C4C4C4;
+  margin-right: 15px;
+  background-image: url(../images/old-line.svg);
+  padding: 2px 5px;
+  background-repeat: no-repeat;
+  display: inline-block;
 }
 
+/* .sale-item__price-old::after {
+  content: '';
+  background-image: url(../images/old-line.svg);
+  position:absolute;
+  right: -10px;
+  top: 8px;
+  width: 15px;
+  height: 18px;
+} */
+
+.sale-item__footer {
+  background: #F0F0F4;
+  padding: 25px 20px;
+  font-size: 18px;
+  line-height: 21px;
+}
+
+.sale-item__footer span {
+  display: block;
+  font-family: 'Barlow', sans-serif;
+  font-weight: 700;
+  color:#1C62CD;
+}
+
+.sale-item__title {
+  font-family: SF Pro Display, sans-serif;
+  color: #2F3035;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 21px;
+  margin-bottom: 7px;
+}
+.banner-section__slider-img{
+  object-fit: cover;
+  min-height: 400px;
+}
+
+.sale-item__img {
+  object-fit: contain;
+}
