@@ -194,6 +194,11 @@ body {
 .banner-section__slider-btnnext {
   right: 20px;
 }
+
+
+/*------------------End banner-section------------ */
+
+
 .slick-dots{
   position: absolute;
   bottom: 40px;
@@ -334,7 +339,10 @@ body {
 .search__tabs {
   margin-bottom: 25px;
 }
+/*------------------End banner-section------------ */
 
+
+/*------------------Start search page-section------------ */
 .search__tabs-item {
   width: 204px;
   height: 47px;
@@ -388,3 +396,8 @@ body {
 .search__content-input::placeholder {
   color:#656464;
 }
+
+/*------------------End search section------------ */
+
+
+/*------------------Start page-section------------ */
