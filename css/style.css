@@ -344,12 +344,12 @@ body {
 
 /*------------------Start search page-section------------ */
 .search__tabs-item {
-  width: 204px;
-  height: 47px;
+  /* width: 204px;
+  height: 47px; */
   padding: 11px 26px 12px;
 }
 
-.search__tabs-item--active {
+.search__tabs-item.tab--active {
   background: #F0F0F4;
   border-radius: 5px;
   font-weight: 700;
@@ -360,7 +360,7 @@ body {
   display: none;
 }
 
-.search__content--active {
+.search__content-item.tabs-content--active {
   display: block;
 }
 
