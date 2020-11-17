@@ -245,16 +245,22 @@
             <a href="tab products__tab" href="#">инструменты</a>
             <a href="tab products__tab" href="#">аксессуары</a>
           </div>
-          <div class="tabs-content products__container">
+          <div class="tabs-container products__container">
             <div class="tabs-content products__content tabs-content--active">
 
             </div>
-            <div class="tabs-content products__content product-item">
+            <div class="tabs-content products__content">
               <div class="product-slider">
                 <div class="product-slider__item">
-                  <div class="product-item__wrapper">
+                  <div class="product-item__wrapper product-item">
+                    <button class="product-item__favorite"></button>
+                    <button class="product-item__basket">
+                      <img src="images/basket-white.svg" alt="">
+                    </button>
                     <a href="#">
-                      <button class="product-item__favorite"></button>
+                      <p class="product-item__hover-text">
+                        посмотреть товар
+                      </p>
                       <img class="product-item__img" src="images/content/product-1.png" alt="">
                       <h4 class="product-item__title">
                         Водонепроницаемый
@@ -263,9 +269,6 @@
                       <p class="price product-item__price">
                         9 800 ₽
                       </p>
-                      <button class="product-item__basket">
-                        <img src="images/basket-white.svg" alt="">
-                      </button>
                     </a>
                   </div>
                 </div>
