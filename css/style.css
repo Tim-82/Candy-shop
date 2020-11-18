@@ -539,9 +539,48 @@ body {
 
 .product-item:hover .product-item__hover-text{
   opacity: 1;
+  color: #2F3035;
 }
 
 .product-item:hover {
   box-shadow: 3px 3px 20px rgba(50,50,50, 0.25);
   color: #1C62CD;
 }
+
+.product-item:hover .product-item__notify-text {
+  color: #2F3035;
+}
+
+.product-item--sale::before {
+  content: 'SALE';
+  padding: 8px 15px;
+  background-color: #1C62CD;
+  position: absolute;
+  left: 0;
+  top: 0;
+  text-transform: uppercase;
+  color: #fff;
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 0.07e;
+}
+
+.product-item__wrapper.product-item__not-available .product-item__price {
+  display: none;
+}
+
+.product-item__notify-text {
+  display: none;
+  font-size: 18px;
+  line-height: 21px;
+  font-weight: 700;
+}
+
+.product-item__wrapper.product-item__not-available .product-item__notify-text {
+  display: block;
+}
+
+.product-item__wrapper.product-item__not-available .product-item__basket {
+  display: none;
+}
+
