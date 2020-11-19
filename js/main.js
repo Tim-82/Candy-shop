@@ -16,5 +16,9 @@ $(function(){
     });
     $('.product-item__favorite').on('click', function() {
         $('.product-item__favorite').toggleClass('product-item__favorite--active')
-    })
+    });
+
+    $('.product-slider').slick({
+        slidesToShow: 4,
+    });
 });
