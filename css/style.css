@@ -129,7 +129,7 @@ body {
   justify-content: space-around;
   align-items: center;
   min-height: 53px;
-  background: #F0F0F4;
+  background-color: #F0F0F4;
 }
 
 .menu-categories__item {
