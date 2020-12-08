@@ -356,11 +356,17 @@ body {
   font-family: 'SFProDisplay-Bold', sans-serif;
 }
 
-.tabs-item {
+/* .tabs-item {
+  display: none;
+} */
+.search__content-item {
   display: none;
 }
 
-.tabs-content.tabs-content--active {
+/* .tabs-content.tabs-content--active {
+  display: block;
+} */
+.search__content-item--active {
   display: block;
 }
 
@@ -400,7 +406,7 @@ body {
 /*------------------End search section------------ */
 
 
-/*------------------Start page-section------------ */
+/*------------------Start categories-section------------ */
 
 .categories__inner {
   display: flex;
