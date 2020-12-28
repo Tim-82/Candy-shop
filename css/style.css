@@ -87,6 +87,16 @@ img {
   align-items: center;
 }
 
+.fix-nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1200;
+  background-color: var(--white);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
 .nav-item:not(:last-child) {
   margin-right: 0.5rem;
 }
