@@ -1,5 +1,6 @@
 // Nav
 const nav = document.querySelector(".nav-menu");
+console.log(nav)
 const navigation = document.querySelector(".navigation");
 const openBtn = document.querySelector(".hamburger");
 const closeBtn = document.querySelector(".close");
