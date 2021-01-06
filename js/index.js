@@ -1,35 +1,24 @@
-// Nav
-const nav = document.querySelector(".nav-menu");
-console.log(nav)
-const navigation = document.querySelector(".navigation");
-const openBtn = document.querySelector(".hamburger");
-const closeBtn = document.querySelector(".close");
+/*
+=============
+Navigation
+=============
+ */
+const navOpen = document.querySelector(".nav__hamburger");
+const navClose = document.querySelector(".close__toggle");
+const menu = document.querySelector(".nav__menu");
+const scrollLink = document.querySelectorAll(".scroll-link");
+// const navContainer = document.querySelector(".nav__menu");
 
-const navLeft = nav.getBoundingClientRect().left;
-openBtn.addEventListener("click", () => {
-  if (navLeft < 0) {
-    navigation.classList.add("show");
-    nav.classList.add("show");
-    document.body.classList.add("show");
-  }
+navOpen.addEventListener("click", () => {
+  menu.classList.add("open");
+  document.body.classList.add("active");
+  menu.style.left = "0";
+  menu.style.width = "30rem";
 });
 
-closeBtn.addEventListener("click", () => {
-  if (navLeft < 0) {
-    navigation.classList.remove("show");
-    nav.classList.remove("show");
-    document.body.classList.remove("show");
-  }
-});
-
-// Fixed Nav
-const navBar = document.querySelector(".navigation");
-const navHeight = navBar.getBoundingClientRect().height;
-window.addEventListener("scroll", () => {
-  const scrollHeight = window.pageYOffset;
-  if (scrollHeight > navHeight) {
-    navBar.classList.add("fix-nav");
-  } else {
-    navBar.classList.remove("fix-nav");
-  }
+navClose.addEventListener("click", () => {
+  menu.classList.remove("open");
+  document.body.classList.remove("active");
+  menu.style.left = "-30rem";
+  menu.style.width = "0";
 });
