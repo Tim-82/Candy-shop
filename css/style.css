@@ -1,7 +1,7 @@
 :root {
   --white: #fff;
   --black: #222;
-  --pink: #f60091;
+  --dark-turquoise: #00948F;
   --grey: #444;
   --grey2: #959595;
   --grey-alt: #d1e2e9;
@@ -47,10 +47,6 @@ img {
   max-height: 100%;
 }
 
-.container {
-  max-width: 114rem;
-  margin: 0 auto;
-}
 @media only screen and (max-width: 1200px) {
   .container {
     padding: 0 3rem;
@@ -152,7 +148,7 @@ Navigation
 }
 
 .nav__list .nav__link:hover {
-  color: var(--pink);
+  color: var(--dark-turquoise);
 }
 
 .nav__icons {
@@ -181,7 +177,7 @@ Navigation
 }
 
 .nav__icons .icon__item:hover {
-  background-color: var(--pink);
+  background-color: var(--dark-turquoise);
   border: 1px solid var(--black);
 }
 
@@ -194,7 +190,7 @@ Navigation
   position: absolute;
   top: 2px;
   right: -6px;
-  background-color: var(--pink);
+  background-color: var(--dark-turquoise);
   padding: 0.2rem 0.4rem;
   border-radius: 100%;
   color: var(--white);
@@ -234,7 +230,7 @@ Navigation Media Query
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color: var(--pink);
+    background-color: var(--dark-turquoise);
     padding: 1.8rem 1rem;
   }
 
