@@ -1,3 +1,4 @@
+ 
 const glide1 = document.getElementById("glide1");
 
 
