@@ -477,3 +477,46 @@ Navigation Media Query
   border: 1px solid var(--black);
   background-color: var(--black);
 }
+
+@media only screen and (max-width: 1200px) {
+  .category-box .content h2 {
+    font-size: 2rem;
+  }
+
+  .category-box .content span {
+    font-size: 1.5rem;
+  }
+
+  .category-box .content a {
+    font-size: 1.5rem;
+    padding: 0.5rem 1.1rem;
+  }
+}
+
+@media only screen and (max-width: 996px) {
+  .category-center {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .category-box {
+    height: 20rem;
+  }
+}
+
+@media only screen and (max-width: 567px) {
+  .category-center {
+    grid-template-columns: 1fr;
+  }
+
+  .category-box {
+    height: 20rem;
+    max-width: 35rem;
+    margin: 0 auto;
+  }
+
+  .category-box .content {
+    top: 20%;
+  }
+}
