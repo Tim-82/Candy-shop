@@ -520,3 +520,86 @@ Navigation Media Query
     top: 20%;
   }
 }
+
+
+/* =========== Sort Products ============ */
+.title-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem 0;
+  margin-bottom: 2rem;
+  background-color: var(--grey-alt);
+}
+
+.section-titles:not(:last-child) {
+  margin-right: 1.5rem;
+}
+
+.section-title {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.section-title h1 {
+  font-size: 1.8rem;
+  font-weight: inherit;
+}
+
+.section-title:hover .primary-title,
+.section-title:hover span.dot,
+.section-title:hover span.dot::before {
+  opacity: 1;
+}
+
+.section-title .primary-title {
+  opacity: 0.6;
+  padding-left: 0.5rem;
+  transition: opacity 0.3s ease-in-out;
+}
+
+span.dot {
+  opacity: 0.6;
+  padding: 0.45rem;
+  position: relative;
+  border: 1px solid var(--black);
+  cursor: pointer;
+  transition: opacity 0.3s ease-in-out;
+}
+
+span.dot::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border: 1px solid var(--black);
+  background-color: var(--black);
+  margin: 1px;
+  opacity: 0.6;
+}
+
+.section-title.active span.dot {
+  opacity: 1;
+}
+
+.section-title.active span.dot::before {
+  opacity: 1;
+}
+
+.section-title.active .primary-title {
+  opacity: 1;
+}
+
+@media only screen and (max-width: 567px) {
+  .title-container {
+    flex-direction: column;
+  }
+
+  .section-titles:not(:last-child) {
+    margin: 0 0 1.3rem;
+  }
+}
