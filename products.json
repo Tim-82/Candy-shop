@@ -3,121 +3,121 @@
       {
         "title": "BEST SELLERS",
         "price": "300",
-        "image": "./images/pic1.jpg",
+        "image": "./images/pic/pic1.jpg",
         "category": "featured"
       },
       {
         "title": "BEST SELLERS",
         "price": "300",
-        "image": "./images/pic2.jpg",
+        "image": "./images/pic/pic2.jpg",
         "category": "trend"
       },
       {
         "title": "BEST SELLERS",
         "price": "300",
-        "image": "./images/pic3.jpg",
+        "image": "./images/pic/pic3.jpg",
         "category": "featured"
       },
       {
         "title": "BEST SELLERS",
         "price": "300",
-        "image": "./images/pic4.jpg",
+        "image": "./images/pic/pic4.jpg",
         "category": "trend"
       },
       {
         "title": "BEST SELLERS",
         "price": "300",
-        "image": "./images/pic5.jpg",
+        "image": "./images/pic/pic5.jpg",
         "category": "featured"
       },
       {
         "title": "BEST SELLERS",
         "price": "300",
-        "image": "./images/pic6.jpg",
+        "image": "./images/pic/pic6.jpg",
         "category": "recent"
       },
       {
         "title": "BEST SELLERS",
         "price": "300",
-        "image": "./images/pic8.jpg",
+        "image": "./images/pic/pic7.jpg",
         "category": "trend"
       },
       {
         "title": "BEST SELLERS",
         "price": "300",
-        "image": "./images/pic7.jpg",
+        "image": "./images/pic/pic8.jpg",
         "category": "featured"
       },
       {
         "title": "BEST SELLERS",
         "price": "300",
-        "image": "./images/pic8.jpg",
+        "image": "./images/pic/pic9.jpg",
         "category": "recent"
       },
       {
         "title": "BEST SELLERS",
         "price": "300",
-        "image": "./images/pic1.jpg",
+        "image": "./images/pic/pic10.jpg",
         "category": "trend"
       },
       {
         "title": "BEST SELLERS",
         "price": "300",
-        "image": "./images/pic9.jpg",
+        "image": "./images/pic/pic11.jpg",
         "category": "special"
       },
       {
         "title": "BEST SELLERS",
         "price": "300",
-        "image": "./images/pic10.jpg",
+        "image": "./images/pic/pic12.jpg",
         "category": "special"
       },
       {
         "title": "BEST SELLERS",
         "price": "300",
-        "image": "./images/pic11.jpg",
+        "image": "./images/pic/pic13.jpg",
         "category": "special"
       },
       {
         "title": "BEST SELLERS",
         "price": "300",
-        "image": "./images/pic12.jpg",
+        "image": "./images/pic/pic14.jpg",
         "category": "recent"
       },
       {
         "title": "BEST SELLERS",
         "price": "300",
-        "image": "./images/pic7.jpg",
+        "image": "./images/pic/pic15.jpg",
         "category": "special"
       },
       {
         "title": "BEST SELLERS",
         "price": "300",
-        "image": "./images/pic13.jpg",
+        "image": "./images/pic/pic16.jpg",
         "category": "latest"
       },
       {
         "title": "BEST SELLERS",
         "price": "300",
-        "image": "./images/pic14.jpg",
+        "image": "./images/pic/pic17.jpg",
         "category": "recent"
       },
       {
         "title": "BEST SELLERS",
         "price": "300",
-        "image": "./images/pic8.jpg",
+        "image": "./images/pic/pic18.jpg",
         "category": "latest"
       },
       {
         "title": "BEST SELLERS",
         "price": "300",
-        "image": "./images/pic15.jpg",
+        "image": "./images/pic/pic19.jpg",
         "category": "latest"
       },
       {
         "title": "BEST SELLERS",
         "price": "300",
-        "image": "./images/pic1.jpg",
+        "image": "./images/pic/pic20.jpg",
         "category": "latest"
       }
     ]

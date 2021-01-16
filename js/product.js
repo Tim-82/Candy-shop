@@ -3,10 +3,10 @@ const getProducts = async () => {
     const data = await res.json();
     const products = data.products;
     return products;
-  };
+};
   
-  // Display Product
-  const displayProducts = (products, center) => {
+// Display Product
+const displayProducts = (products, center) => {
     let display = products.map(
       ({ title, image, price }) => `<div class="product">
             <div class="product-header">
@@ -47,12 +47,13 @@ const getProducts = async () => {
   
     display = display.join("");
     center.innerHTML = display;
-  };
+};
   
-  // Filtering
-  const catContainer = document.querySelector(".sort-category");
-  const filterBtns = [...document.querySelectorAll(".filter-btn")];
-  
+// Filtering
+const catContainer = document.querySelector(".sort-category");
+const productCenter = document.querySelector(".product-center")
+const filterBtns = [...document.querySelectorAll(".filter-btn")];
+
   if (catContainer) {
     catContainer.addEventListener("click", async e => {
       const target = e.target.closest(".section-title");
@@ -79,10 +80,7 @@ const getProducts = async () => {
   }
 
 
-const productCenter = document.querySelector(".product-center");
-const latestCenter = document.querySelector(".latest-center");
-const recentCenter = document.querySelector(".recent-center");
-const shopCenter = document.querySelector(".shop-center");
+
 
 const filterArray = async type => {
   const products = await getProducts();
