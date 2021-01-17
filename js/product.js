@@ -87,7 +87,11 @@ const filterArray = async type => {
   return products.filter(product => product.category === type);
 };
 
+const shopCenter = document.querySelector(".shop-center");
+
 window.addEventListener("DOMContentLoaded", async () => {
+  const products = await getProducts();
   const defaultProducts = await filterArray("trend");
   displayProducts(defaultProducts, productCenter);
+  displayProducts(products, shopCenter);
 });

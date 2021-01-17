@@ -95,30 +95,6 @@
         "price": "300",
         "image": "./images/pic/pic16.jpg",
         "category": "latest"
-      },
-      {
-        "title": "BEST SELLERS",
-        "price": "300",
-        "image": "./images/pic/pic17.jpg",
-        "category": "recent"
-      },
-      {
-        "title": "BEST SELLERS",
-        "price": "300",
-        "image": "./images/pic/pic18.jpg",
-        "category": "latest"
-      },
-      {
-        "title": "BEST SELLERS",
-        "price": "300",
-        "image": "./images/pic/pic19.jpg",
-        "category": "latest"
-      },
-      {
-        "title": "BEST SELLERS",
-        "price": "300",
-        "image": "./images/pic/pic20.jpg",
-        "category": "latest"
       }
     ]
   }
