@@ -899,3 +899,9 @@ span.dot::before {
     grid-row-end: 19;
   }
 }
+
+.brands li img {
+  width: 100%;
+  object-fit: contain;
+  height: 12rem;
+}
