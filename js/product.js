@@ -87,11 +87,20 @@ const filterArray = async type => {
   return products.filter(product => product.category === type);
 };
 
+// const productCenter = document.querySelector(".product-center");
+const latestCenter = document.querySelector(".latest-center");
+const recentCenter = document.querySelector(".recent-center");
 const shopCenter = document.querySelector(".shop-center");
 
 window.addEventListener("DOMContentLoaded", async () => {
   const products = await getProducts();
   const defaultProducts = await filterArray("trend");
+  const latestProducts = await filterArray("latest");
+  const recentProducts = await filterArray("recent");
+
+
   displayProducts(defaultProducts, productCenter);
+  displayProducts(defaultProducts, latesttProducts);
+  displayProducts(recentProducts, recentProducts);
   displayProducts(products, shopCenter);
 });

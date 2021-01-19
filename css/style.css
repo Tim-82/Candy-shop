@@ -905,3 +905,9 @@ span.dot::before {
   object-fit: contain;
   height: 12rem;
 }
+
+@media only screen and (max-width: 567px) {
+  .brands li img {
+    height: 9rem;
+  }
+}
