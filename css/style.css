@@ -974,3 +974,31 @@ span.dot::before {
 .facility-box:hover i {
   transform: rotateY(180deg);
 }
+
+/*
+======================
+Facility Media Query
+======================
+*/
+@media only screen and (max-width: 998px) {
+  .facility-contianer {
+    grid-template-columns: 1fr 1fr;
+    row-gap: 3rem;
+  }
+}
+
+@media only screen and (max-width: 568px) {
+  .facility-contianer {
+    grid-template-columns: 1fr;
+  }
+
+  .facility-icon {
+    width: 7rem;
+    height: 7rem;
+    line-height: 8.5rem;
+  }
+
+  .facility-contianer p {
+    font-size: 1.4rem;
+  }
+}
