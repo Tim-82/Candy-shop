@@ -100,7 +100,7 @@ window.addEventListener("DOMContentLoaded", async () => {
 
 
   displayProducts(defaultProducts, productCenter);
-  displayProducts(defaultProducts, latesttProducts);
+  displayProducts(defaultProducts, latestProducts);
   displayProducts(recentProducts, recentProducts);
   displayProducts(products, shopCenter);
 });
