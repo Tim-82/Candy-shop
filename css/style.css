@@ -59,6 +59,31 @@ img {
   }
 }
 
+#pre-loader {
+  position: fixed;
+  height: 100vh;
+  width: 100vw;
+  z-index: 999999;
+  background-color: var(--white);
+  transition: all 300ms ease-in-out;
+}
+
+.loader {
+  height: 100vh;
+  width: 100vw;
+  background: url("../images/loader.svg") center/30rem no-repeat fixed;
+}
+
+#pre-loader.hide {
+  opacity: 0;
+  pointer-events: none;
+}
+
+@media only screen and (max-width: 567px) {
+  .loader {
+    background-size: 20rem;
+  }
+}
 
 /*
 ======================
