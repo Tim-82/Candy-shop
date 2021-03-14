@@ -24,6 +24,33 @@ navClose.addEventListener("click", () => {
 });
 
 
+
+// Scroll To
+const links = [...document.querySelectorAll(".scroll-link")];
+links.map(link => {
+  link.addEventListener("click", e => {
+    e.preventDefault();
+
+    const id = e.target.getAttribute("href").slice(1);
+    const element = document.getElementById(id);
+    const fixNav = navBar.classList.contains("fix-nav");
+    let position = element.offsetTop - navHeight;
+
+    if (!fixNav) {
+      position = position - navHeight;
+    }
+
+    window.scrollTo({
+      top: position,
+      left: 0,
+    });
+
+    navigation.classList.remove("show");
+    nav.classList.remove("show");
+    document.body.classList.remove("show");
+  });
+});
+
 // preloader
 window.addEventListener("load", () => {
   const loader = document.getElementById("pre-loader");

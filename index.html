@@ -1,41 +1,31 @@
 <!DOCTYPE html>
-<html lang="ru">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<html lang="en">
 
-    <!-- Favicon -->
-    <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon" />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700;900&display=swap" rel="stylesheet" />
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;700&display=swap" rel="stylesheet" />
 
-    <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" />
-
-    <!-- Glidejs StyleSheet -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.4.1/css/glide.core.min.css" />
-
-    <!-- Animate CSS -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
-
-    <!-- StyleSheet -->
-    <link rel="stylesheet" href="./css/style.css" />
-    <title>Dive-store</title>
-  </head>
+  <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon" />
 
 
- <!-- Glidejs Script -->
- <script src="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.4.1/glide.min.js"></script>
+  <!-- Carousel -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.4.1/css/glide.core.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.4.1/css/glide.theme.min.css
+">
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+  <!-- Custom StyleSheet -->
+  <link rel="stylesheet" href="styles.css" />
+
+  <title>Dive-store</title>
+</head>
 
 <body>
 
-  <div id="pre-loader">
-    <div class="loader"></div>
-  </div>
-  
 <!-- Header -->
-
 <header id="header" class="header">
   <div class="navigation">
     <div class="container">
@@ -48,22 +38,19 @@
 
         <div class="nav__logo">
           <a href="/" class="scroll-link">
-            <svg>
-              <use xlink:href="./images/sprite.svg#icon-dive"></use>
-            </svg>
+            <img src="/images/DiveMarketing.png" alt="">
           </a>
         </div>
 
         <div class="nav__menu">
           <div class="menu__top">
-            <span class="nav__category">Candy Shop</span>
+            <span class="nav__category">Scuba Dive<span></span>
             <a href="#" class="close__toggle">
               <svg>
                 <use xlink:href="./images/sprite.svg#icon-cross"></use>
               </svg>
             </a>
           </div>
-
           <ul class="nav__list">
             <li class="nav__item">
               <a href="#header" class="nav__link scroll-link">Home</a>
@@ -104,7 +91,8 @@
     </div>
   </div>
 
-  <section class="hero">
+  <!-- Hero -->
+  <div class="hero">
     <div class="content">
       <small>Welcome to our</small>
       <h1>Scuba <br>Diving Store</h1>
@@ -120,303 +108,15 @@
       <img src="images/bubble.png" alt="">
       <img src="images/bubble.png" alt="">
     </div>
-  </section>
-</header>
-
-
-<!-- Main -->
-  <main>
-  <!-- Category -->
-    <section class="section category">
-      <h2 class="title">SCUBA DIVING COURSES</h2>
-      <div class="category-center container">
-
-        <div class="category-box">
-          <img src="./images/course_1.jpg" alt="">
-          <div class="content">
-            <h2>Open Water Dive Courses</h2>
-            <span>for complete beginners</span>
-            <a href="#">get started</a>
-          </div>
-        </div>
-
-        <div class="category-box">
-          <img src="./images/course_2.jpg" alt="">
-          <div class="content">
-            <h2>Advanced Adventures</h2>
-            <span>completed open water dive course</span>
-            <a href="#">get started</a>
-          </div>
-        </div>
-
-        <div class="category-box">
-          <img src="./images/course_3.jpg" alt="">
-          <div class="content">
-            <h2>Other Specialty Courses</h2>
-            <span>other specialty courses</span>
-            <a href="#">get started</a>
-          </div>
-        </div>
-      </div>
-    </section>
-    
-    <section class="section sort-category">
-      <div class="title-container ">
-        <div class="section-titles">
-          <div class="section-title active filter-btn" data-id="trend">
-            <span class="dot"></span>
-            <h1 class="primary-title">Trending Products</h1>
-          </div>
-        </div>
-        <div class="section-titles">
-          <div class="section-title active filter-btn" data-id="trend">
-            <span class="dot"></span>
-            <h1 class="primary-title">Special Products</h1>
-          </div>
-        </div>
-        <div class="section-titles">
-          <div class="section-title active filter-btn" data-id="trend">
-            <span class="dot"></span>
-            <h1 class="primary-title">Featured Products</h1>
-          </div>
-        </div>
-      </div>
-
-      <div class="product-center container">
-         <!-- <div class="product"></div> -->
-      </div>
-    </section>
-    
-     
-    <!-- Gallary -->
-    <section class="gallary container">
-      <figure class="gallary-item item-1">
-        <img src="./images/gallery/grid_1.jpg" alt="" class="gallary-img">
-        <div class="content">
-          <h2>fins,masks and snorkels</h2>
-          <a href="#">View more</a>
-        </div>
-      </figure>
-
-      <figure class="gallary-item item-2">
-        <img src="./images/gallery/grid_2.jpg" alt="" class="gallary-img">
-        <div class="content">
-          <h2>electronics and computers</h2>
-        </div>
-      </figure>
-
-      <figure class="gallary-item item-3">
-        <img src="./images/gallery/grid_3.jpg" alt="" class="gallary-img">
-        <div class="content">
-          <h2>suits and complements</h2>
-        </div>
-      </figure>
-      
-      <figure class="gallary-item item-4">
-        <img src="../images/gallery/grid_4.jpg" alt="" class="gallary-img">
-        <div class="content">
-          <h2>bcd jakets</h2>
-        </div>
-      </figure>
-    </section>
-
-    <!-- All Products -->
-    <section class="section" id="shop">
-      <div class="title-container">
-        <div class="section-titles">
-          <div class="section-title active" data-id="latest">
-            <span class="dot"></span>
-            <h1 class="primary-title">All Products</h1>
-          </div>
-        </div>
-      </div>
-
-      <div class="shop-center product-center container">
-
-      </div>
-    </section>
-
-    <div class="section brands container">
-      <div class="glide" id="glide1">
-        <div class="glide__track" data-glide-el="track">
-          <ul class="glide__slides">
-            <li class="glide__slide">
-              <img src="./images/brand/1.png" alt="">
-            </li>
-            <li class="glide__slide">
-              <img src="./images/brand/2.png" alt="">
-            </li>
-            <li class="glide__slide">
-              <img src="./images/brand/3.png" alt="">
-            </li>
-            <li class="glide__slide">
-              <img src="./images/brand/2.png" alt="">
-            </li>
-            <li class="glide__slide">
-              <img src="./images/brand/1.png" cla alt="">
-            </li>
-            <li class="glide__slide">
-              <img src="./images/brand/3.png" alt="">
-            </li>
-          </ul>
-        </div>
-      </div>
-    </div>
- 
-
-    <!-- Latest Products -->
-    <section class="section latest-products" id="new">
-      <div class="title-container">
-        <div class="section-titles">
-          <div class="section-title active" data-id="latest">
-            <span class="dot"></span>
-            <h1 class="primary-title">Latest Products</h1>
-          </div>
-        </div>
-      </div>
-      <div class="latest-center product-center container"></div>
-
-    </section>
-
-   <!-- Recent Products -->
-   <section class="section recent-products" id="recent">
-    <div class="title-container">
-      <div class="section-titles">
-        <div class="section-title active" data-id="recent">
-          <span class="dot"></span>
-          <h1 class="primary-title">Recent View</h1>
-        </div>
-      </div>
-    </div>
-    <div class="recent-center product-center container">
-
-    </div>
-  </section>
-
-   <!-- Facility -->
-  <section class="facility section" id="facility">
-    <div class="facility-container container">
-      <div class="facility-box">
-        <div class="facility-icon">
-          <i class="fas fa-plane"></i>
-        </div>
-        <p>FREE SHIPPING WORLD WIDE</p>
-      </div>
-
-      <div class="facility-box">
-        <div class="facility-icon">
-          <i class="fas fa-credit-card"></i>
-        </div>
-        <p>100% MONEY BACK GUARANTEE</p>
-      </div>
-
-      <div class="facility-box">
-        <div class="facility-icon">
-          <i class="far fa-credit-card"></i>
-        </div>
-        <p>MANY PAYMENT GATWAYS</p>
-      </div>
-
-      <div class="facility-box">
-        <div class="facility-icon">
-          <i class="fas fa-headset"></i>
-        </div>
-        <p>24/7 ONLINE SUPPORT</p>
-      </div>
-    </div>
-  </section>
-
-  <!-- PopUp -->
-  <div class="popup">
-    <div class="popup-content">
-      <div class="popup-close">
-        <i class="fas fa-times"></i>
-      </div>
-      <div class="popup-left">
-        <div class="popup-img">
-          <img  src="./images/scuba_discount.jpg " alt="popup">
-        </div>
-      </div>
-      <div class="popup-right">
-        <div class="right-content">
-          <h1>Get Discount <span>30%</span> Off</h1>
-          <p>Sign up to our blogletter and save 30% for you next purchase. No spam, we promise!
-          </p>
-          <form action="#">
-            <input type="email" placeholder="Enter your email..." class="popup-form">
-            <a href="#">Subscribe</a>
-          </form>
-        </div>
-      </div>
-    </div>
   </div>
-  
-  <!-- Footer -->
-  <footer id="footer" class="section footer">
-    <div class="container">
-      <div class="footer-container">
-        <div class="footer-center">
-          <h3>EXTRAS</h3>
-          <a href="#">Brands</a>
-          <a href="#">Gift Certificates</a>
-          <a href="#">Affiliate</a>
-          <a href="#">Specials</a>
-          <a href="#">Site Map</a>
-        </div>
-        <div class="footer-center">
-          <h3>INFORMATION</h3>
-          <a href="#">About Us</a>
-          <a href="#">Privacy Policy</a>
-          <a href="#">Terms & Conditions</a>
-          <a href="#">Contact Us</a>
-          <a href="#">Site Map</a>
-        </div>
-        <div class="footer-center">
-          <h3>MY ACCOUNT</h3>
-          <a href="#">My Account</a>
-          <a href="#">Order History</a>
-          <a href="#">Wish List</a>
-          <a href="#">blogletter</a>
-          <a href="#">Returns</a>
-        </div>
-        <div class="footer-center">
-          <h3>CONTACT US</h3>
-          <div>
-            <span>
-              <i class="fas fa-map-marker-alt"></i>
-            </span>
-            42 Dream House, Dreammy street, 7131 Dreamville, USA
-          </div>
-          <div>
-            <span>
-              <i class="far fa-envelope"></i>
-            </span>
-            company@gmail.com
-          </div>
-          <div>
-            <span>
-              <i class="fas fa-phone"></i>
-            </span>
-            456-456-4512
-          </div>
-          <div>
-            <span>
-              <i class="far fa-paper-plane"></i>
-            </span>
-            Dream City, USA
-          </div>
-        </div>
-      </div>
-    </div>
-    </div>
-  </footer>
-  <!-- End Footer -->
+</header>
+<!-- End Header -->
 
-  </main>
-   <!-- Custom Script -->
- <script src="./js/product.js"></script>
- <script src="./js/slider.js"></script>
+
+
+ <!-- Custom JavaScript -->
+ <script src="./js/products.js"></script>
  <script src="./js/index.js"></script>
+ <script src="./js/slider.js"></script>
   
 </body>
-</html>
